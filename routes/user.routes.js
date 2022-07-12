@@ -9,4 +9,9 @@ data.push({ ...req.body, id: uuid() });
 res.status(201).json({ message: "Criado com sucesso!", data: data });
 });
 
+router.get("/read", (req, res) => {
+  
+res.status(200).json({ data: data });
+});
+
 module.exports = router;
